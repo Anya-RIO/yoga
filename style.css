@@ -1,0 +1,595 @@
+:root {
+    --color1: rgb(255, 200, 116);
+    --color2: rgb(255, 149, 0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "kurale";
+    src: url(fonttext/kurale-regular-webfont.woff) format("woof"),
+        url(fonttext/kurale-regular-webfont.woff2) format("woff2");
+}
+
+/* @font-face {
+    font-family: "Balsam";
+    src: url(fonth3/balsamiqsans-bold-webfont.woff) format("woof"),
+    url(fonth3/balsamiqsans-bold-webfont.woff2)format("woff2");
+} */
+
+@font-face {
+    font-family: "Pacifico";
+    src: url(fontmenu/pacifico-regular-webfont.woff) format("woof"),
+        url(fontmenu/pacifico-regular-webfont.woff2)format("woff2");
+}
+
+/* ------------header---------- */
+header {
+    background: linear-gradient(to left, var(--color1), var(--color2));
+    display: grid;
+    padding: 1% 3%;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.logo img {
+    width: 60px;
+    border-radius: 50%;
+}
+
+.head_one {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.head_one a {
+    font-family: "kurale";
+    text-decoration: none;
+    font-size: 12pt;
+    color: rgb(255, 255, 255);
+}
+
+.head_one a:hover {
+    color: rgb(255, 238, 0);
+}
+
+.head_two {
+    display: flex;
+    gap: 10px;
+    justify-self: end;
+    align-items: center;
+}
+
+.icon {
+    font-size: 20pt;
+    font-weight: bold;
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* ----------information------------- */
+.se1 {
+    margin: 2% 9%;
+}
+
+.se1 h3 {
+    font-family: "kurale";
+}
+
+.text_se1 {
+    padding: 10px;
+    font-family: "kurale";
+    font-size: 13pt;
+    text-align: justify;
+}
+
+.se1 p {
+    font-family: "kurale";
+    font-size: 18pt;
+}
+
+/* -------------статьи--------------- */
+.se2 {
+    margin: 2% 9%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 10px;
+    font-family: "kurale";
+}
+
+.se2 .cart_se2 {
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    text-align: justify;
+}
+
+.se2 .info_se2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+.se2 img {
+    justify-self: center;
+    width: 200px;
+    height: 130px;
+}
+
+.cart_se2 button {
+    font-size: 12pt;
+    background-color: rgb(240, 177, 75);
+    border: none;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-family: "kurale";
+}
+/* -----------modal----------------- */
+.modal-content {
+    display: grid;
+}
+
+.modal-content h6 {
+    text-indent: 20px;
+    font-weight: bold;
+}
+
+.zag {
+    font-style: italic;
+    padding-bottom: 10px;
+}
+
+.modal-footer {
+    background-color: rgb(240, 177, 75);
+    border-radius: 5px;
+    font-family: "kurale";
+    float: right;
+}
+
+.modal-content img {
+    padding: 10px;
+    width: 400px;
+    height: 200px;
+}
+
+.se2 a {
+    border-radius: 5px;
+    font-family: "kurale";
+}
+
+.cart_se2 p {
+    text-indent: 30px;
+}
+
+.cart_se2 ol {
+    margin-left: 45px;
+}
+
+/* ----------галлерея----------- */
+.se3 {
+    margin: 2% 8%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.se3 img {
+    width: 300px;
+    height: 340px;
+}
+
+/* ------------преимущества------------------- */
+.tab {
+    font-family: "kurale";
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 3% 2% 3%;
+}
+
+.tab h3 {
+    grid-column: 1/span 3;
+    grid-row: 1;
+    margin-bottom: 3%;
+    font-size: 35pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tab .icon{
+font-size: 35pt;
+}
+
+.tab div {
+    padding: 15%;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    font-size: 14pt;
+}
+
+.boxBorder1,
+.boxBorder2 {
+    border-right: 1px solid orange;
+}
+
+/* --------------форма---------------- */
+.form {
+    padding: 10px 0;
+    width: 50%;
+    border: 2px solid orange;
+    margin: 2% 25%;
+}
+
+.form h3 {
+    font-family: "kurale";
+    margin-bottom: 4%;
+    font-size: 35pt;
+    font-weight: normal;
+    text-align: center;
+}
+
+.FormsTwo {
+    grid-row-gap: 1%;
+    width: 90%;
+    font-family: "kurale";
+    margin: 0 auto;
+}
+
+.FormsTwo .block1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.block1 input::placeholder {
+    color: rgb(168, 165, 171);
+    font-size: 11pt;
+    font-style: italic;
+}
+
+.FormsTwo div {
+    font-weight: bold;
+}
+
+.but {
+    display: flex;
+    justify-content: center;
+}
+
+.FormsTwo button {
+    background-color: rgb(240, 177, 75);
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+    font-size: 15pt;
+    cursor: pointer;
+    font-family: "kurale";
+}
+
+/* -----------------footer-------------- */
+footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2% 3%;
+    background: linear-gradient(to left, var(--color1), var(--color2));
+}
+
+.box_img {
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+}
+
+.box_img .icon_f {
+    font-size: 20pt;
+    font-weight: bold;
+    padding: 5px;
+    cursor: pointer;
+}
+
+footer .copy {
+    display: flex;
+    align-items: center;
+    font-size: 8pt;
+    font-family: "Pacifico";
+    font-weight: bold;
+}
+
+.icon_f:hover {
+    border-radius: 20%;
+    background-color: rgb(219, 216, 216);
+}
+
+@media screen and (min-width:600px) and (max-width:800px) {
+
+    /* ------------header---------- */
+
+    .logo img {
+        width: 50px;
+    }
+
+    .head_one {
+        gap: 15px;
+    }
+
+    .head_one a {
+        font-size: 9pt;
+    }
+
+    .head_two {
+        gap: 6px;
+    }
+
+    .icon {
+        font-size: 14pt;
+    }
+
+    /* ----------information------------- */
+    .text_se1 {
+        font-size: 11pt;
+    }
+
+    .se1 p {
+        font-size: 16pt;
+    }
+
+    /* -------------статьи--------------- */
+    .se2 .info_se2 {
+        font-size: 11pt;
+        padding: 0;
+    }
+
+    .se2 .n {
+        font-size: 10pt;
+    }
+
+    .se2 img {
+        width: 100px;
+        height: 70px;
+    }
+
+    .se2 a {
+        font-size: 10pt;
+    }
+    /* ---------------modal------------- */
+    .modal-content h6 {
+        text-indent: 15px;
+    }
+    
+    .modal-content img {
+        padding: 10px;
+        width: 300px;
+        height: 150px;
+    }
+
+    .se2 p{
+        font-size: 12pt;
+    }
+    /* ----------галлерея----------- */
+    .se3 img {
+        width: 200px;
+        height: 250px;
+    }
+
+    .se3 .n {
+        display: none;
+    }
+
+/* ------------преимущества------------------- */
+.tab h3 {
+    font-size: 25pt;
+}
+.tab h4 {
+    font-size: 16pt;
+}
+.tab .icon{
+font-size: 25pt;
+}
+
+.tab div {
+    font-size: 12pt;
+}
+
+    /* --------------форма---------------- */
+    .form h3 {
+        font-size: 25pt;
+    }
+
+    .FormsTwo {
+        width: 80%;
+    }
+
+    .FormsTwo .block1 {
+        grid-template-columns: 1fr;
+        grid-gap: 1%;
+    }
+
+    .FormsTwo button {
+        font-size: 12pt;
+    }
+
+    /* -----------------footer-------------- */
+    .box_img {
+        gap: 10px;
+    }
+
+    .box_img .icon_f {
+        font-size: 14pt;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    /* ------------header---------- */
+    .logo img {
+        width: 25px;
+    }
+
+    .head_one {
+        gap: 10px;
+    }
+
+    .head_one a {
+        font-size: 7pt;
+    }
+
+    .head_two {
+        gap: 5px;
+    }
+
+    .icon {
+        font-size: 10pt;
+        padding: 2px;
+    }
+
+    /* ----------information------------- */
+    .se1 h3 {
+        font-size: 20pt;
+    }
+
+    .text_se1 {
+        font-size: 10pt;
+    }
+
+    .se1 p {
+        font-size: 12pt;
+    }
+
+    /* -------------статьи--------------- */
+    .se2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .se2 .info_se2 {
+        font-size: 9pt;
+        padding: 0;
+    }
+
+    .se2 .n {
+        display: none;
+        font-size: 8pt;
+    }
+
+    .se2 a {
+        font-size: 8pt;
+    }
+
+    /* ---------------modal------------- */
+    .modal-content h6 {
+        text-indent: 10px;
+    }
+
+    .zag{
+        font-size: 10pt;
+    }
+
+    .modal-content img {
+        padding: 10px;
+        width: 200px;
+        height: 130px;
+    }
+
+    .se2 p{
+        font-size: 10pt;
+    }
+    /* ----------галлерея----------- */
+    .se3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .se3 img {
+        width: 200px;
+        height: 250px;
+    }
+
+    .se3 .none {
+        display: none;
+    }
+
+    /* ------------преимущества------------------- */
+    .tab {
+        display: flex;
+        flex-direction: column;
+    }
+    
+.boxBorder1,
+.boxBorder2 {
+    border-right:none;
+}
+.boxBorder1{
+    border-top: 1px solid orange;
+}
+.boxBorder1,
+.boxBorder2, .boxBorder3 {
+    border-bottom: 1px solid orange;
+}
+    .tab h3 {
+    font-size: 20pt;
+}
+.tab h4 {
+    font-size: 14pt;
+}
+.tab .icon{
+font-size: 20pt;
+}
+
+.tab div {
+    margin: 0 7%;
+    font-size: 10pt;
+    padding: 10px;
+}
+
+    /* --------------форма---------------- */
+    .form h3 {
+        font-size: 20pt;
+    }
+
+    .FormsTwo {
+        width: 80%;
+    }
+
+    .FormsTwo .block1 {
+        grid-template-columns: 1fr;
+        grid-gap: 1%;
+    }
+
+    .FormsTwo button {
+        padding: 5px 10px;
+        font-size: 10pt;
+    }
+
+    /* -----------------footer-------------- */
+    .box_img {
+        gap: 0;
+    }
+
+    .box_img .icon_f {
+        font-size: 12pt;
+    }
+
+    footer .copy {
+        font-size: 5pt;
+    }
+}
+
+
+
+
+
